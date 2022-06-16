@@ -14,7 +14,7 @@ class test_pyu(unittest.TestCase):
     def test_samplefunc(self):
         df = self.spark.createDataFrame(data=[[1, 'a'], [2, 'b']],
                                         schema=['c1', 'c2'])
-        self.assertEqual(df.count(), 1)
+        self.assertEqual(df.count(), 2)
 
     @classmethod
     def tearDownClass(cls):
