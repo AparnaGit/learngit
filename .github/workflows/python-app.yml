@@ -38,3 +38,9 @@ jobs:
       run: |
         java -version
         spark-submit ./tests/test_dummy.py
+    - name: Upload test results to report
+      if: always()
+      uses: actions/upload-artifact@v2
+      with:
+          name : "test_results"
+          path: "./tests/test-reports/*.xml"
