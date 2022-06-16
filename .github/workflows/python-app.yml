@@ -36,4 +36,4 @@ jobs:
         pip install pyspark
     - name: Install dependencies
       run: |
-        java --version
+        java -version
