@@ -37,4 +37,4 @@ jobs:
     - name: Install dependencies
       run: |
         java -version
-        spark-submit --version
+        spark-submit ./tests/test_dummy.py
