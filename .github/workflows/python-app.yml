@@ -37,5 +37,5 @@ jobs:
     - name: Run test cases
       run: |
         java -version
-        spark-submit ./tests/test_dummy.py
+        python -m unittest
    
