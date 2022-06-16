@@ -34,5 +34,4 @@ jobs:
         pip install pyspark
     - name: Install dependencies
       run: |
-        PYSPARK_PYTHON=python3.7 SPARK_HOME=~/.local/lib/python3.7/site-packages/pyspark
-        spark-submit --version
+        java --version
